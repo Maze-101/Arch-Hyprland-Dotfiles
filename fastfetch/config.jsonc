@@ -1,0 +1,86 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "type": "kitty",
+        "source": "/path/to/your/logo.png",
+        "width": 28,
+        "height": 12,
+        "padding": {
+            "top": 2,
+            "left": 2
+        }
+    },
+    "display": {
+        "separator": " ",
+        "color": {
+            "keys": "magenta", // This will be your deep red/magenta
+            "output": "white"
+        }
+    },
+    "modules": [
+        "break",
+        {
+            "type": "title",
+            "format": " {user-name-colored} win, or die trying"
+        },
+        {
+            "type": "custom",
+            "format": "┌──────────────────────────────────────────────────┐"
+        },
+        {
+            "type": "os",
+            "key": "  󰣇 OS",
+            "keyColor": "red"
+        },
+        {
+            "type": "packages",
+            "key": "  󰏖 PKG",
+            "keyColor": "green"
+        },
+        {
+            "type": "cpu",
+            "key": "  󰻠 CPU",
+            "keyColor": "red"
+        },
+        {
+            "type": "gpu",
+            "key": "  󰢮 GPU",
+            "keyColor": "red"
+        },
+        {
+            "type": "memory",
+            "key": "  󰍛 MEM",
+            "keyColor": "red"
+        },
+        {
+            "type": "custom",
+            "format": "├──────────────────────────────────────────────────┤"
+        },
+        {
+            "type": "display",
+            "key": "  󰍹 DIS",
+            "keyColor": "red"
+        },
+        {
+            "type": "wm",
+            "key": "  󱂬 WM ",
+            "keyColor": "red"
+        },
+        {
+            "type": "terminal",
+            "key": "  󰆍 TER",
+            "keyColor": "red"
+        },
+        {
+            "type": "uptime",
+            "key": "  󰔚 UPT",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "custom",
+            "format": "└──────────────────────────────────────────────────┘"
+        },
+        "break",
+        "colors"
+    ]
+}

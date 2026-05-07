@@ -1,0 +1,60 @@
+{
+    "layer": "top",
+    "position": "top",
+    "margin-top": 5,
+    "margin-left": 10,
+    "margin-right": 10,
+    "spacing": 10,
+
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": ["pulseaudio", "battery", "hyprland/language", "keyboard-state", "tray"],
+
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "on-click": "activate",
+        "format": "{icon}",
+        "persistent-workspaces": {
+            "*": 5
+        },
+        "format-icons": {
+            "1": "I",
+            "2": "II",
+            "3": "III",
+            "4": "IV",
+            "5": "V"
+        }
+    },
+    "clock": {
+        "format": "{:%H:%M}  ",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+    "battery": {
+        "format": "{capacity}% {icon}",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "pulseaudio": {
+        "format": "{volume}% {icon}",
+        "format-muted": "",
+        "format-icons": {
+            "default": ["", ""]
+        },
+        "on-click": "pavucontrol"
+    },
+    "hyprland/language": {
+        "format": "󰗊 {}",
+        "format-en": "US",
+        "format-ar": "AR",
+        "min-width": 40,
+        "justify": "center"
+    },
+    "keyboard-state": {
+        "numlock": true,
+        "format": "{name} {icon}",
+        "format-icons": {
+            "locked": "󰎠 ",
+            "unlocked": "󱧓 "
+        }
+    }
+}

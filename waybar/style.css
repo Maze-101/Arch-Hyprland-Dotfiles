@@ -1,0 +1,58 @@
+* {
+    border: none;
+    font-family: "JetBrainsMono Nerd Font";
+    font-weight: 800; 
+}
+
+window#waybar {
+    background: transparent;
+}
+
+/* Individual Pill Style - Gruvbox Theme */
+#workspaces, #clock, #battery, #pulseaudio, #language, #keyboard-state, #tray {
+    background: #282828;      /* Gruvbox Dark Gray */
+    color: #ebdbb2;           /* Gruvbox Cream (FG) */
+    border: 2px solid #d79921; /* Gruvbox Yellow/Gold Border */
+    
+    border-radius: 10px; 
+    padding: 0px 25px; 
+    margin: 5px 8px;
+    
+    /* Soft amber glow instead of sharp red */
+    box-shadow: 0 0 5px rgba(215, 153, 33, 0.3);
+}
+
+/* Workspaces specific style */
+#workspaces button {
+    color: #928374; /* Gruvbox Gray (Inactive) */
+    padding: 0 5px;
+}
+
+#workspaces button.active {
+    color: #fabd2f; /* Bright Yellow for current workspace */
+    background: transparent;
+}
+
+#workspaces button.visible {
+    color: #ebdbb2;
+}
+
+#workspaces button:hover {
+    color: #fe8019; /* Orange hover effect */
+    background: rgba(251, 73, 52, 0.1);
+}
+
+/* Clock - Amber Glow */
+#clock {
+    color: #ebdbb2;
+    text-shadow: 0 0 5px #d79921;
+}
+
+/* Optional: Different border colors for specific modules to add variety */
+#battery {
+    border-color: #98971a; /* Muted Green */
+}
+
+#pulseaudio {
+    border-color: #458588; /* Muted Blue */
+}

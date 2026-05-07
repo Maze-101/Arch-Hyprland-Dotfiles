@@ -1,0 +1,42 @@
+window {
+    margin: 0px;
+    border: 2px solid #d79921; /* Gruvbox Yellow/Gold border */
+    background-color: #282828; /* Gruvbox Dark background */
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 14px;
+}
+
+#outer-box {
+    margin: 5px;
+    border: none;
+    background-color: transparent;
+}
+
+#input {
+    margin: 5px;
+    border: none;
+    color: #ebdbb2;           /* Gruvbox Cream text */
+    background-color: #3c3836; /* Slightly lighter gray for the input field */
+    border-radius: 8px;
+}
+
+#inner-box {
+    margin: 5px;
+    border: none;
+    background-color: transparent;
+}
+
+#entry:selected {
+    background-color: #d79921; /* Gold selection background */
+    border-radius: 8px;
+}
+
+#text:selected {
+    color: #282828;           /* Dark text on light selection for readability */
+    font-weight: bold;
+}
+
+#text {
+    margin: 5px;
+    color: #ebdbb2;           /* Gruvbox Cream text */
+}
