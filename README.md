@@ -33,7 +33,7 @@ The daily drivers used in this environment:
 
 - brave
 - gthumb
-- thunar
+- nautilus
 - vs code
 - awww
 - grim
