@@ -10,7 +10,11 @@ A repository for my personal Arch Linux setup running the hyprland wayland compo
 
 ![image](Screenshots/2026-05-07.png)
 
+![image](Screenshots/screenshot3.png)
+
 ![image](Screenshots/2026-05-06.png)
+
+![image](Screenshots/screenshot2.png)
 
 ---
 ## 🛠 Core Components
@@ -31,7 +35,7 @@ These are the main configurations found in the `.config` directory:
 
 The daily drivers used in this environment:
 
-- brave
+- vivaldi
 - gthumb
 - nautilus
 - vs code
